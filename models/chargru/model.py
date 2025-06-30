@@ -72,7 +72,7 @@ class CharGRU(object):
         :param bs: Batch size.
         :return: None
         """
-        checkpoint = ModelCheckpoint("checkpoints/chargru-best.hdf5", monitor='val_accuracy', save_best_only=True, mode='max', verbose=1)
+        checkpoint = ModelCheckpoint("checkpoints/chargru-weights-improvement-{epoch:02d}-acc-{val_accuracy:.2f}-loss-{val_loss:.2f}.hdf5", monitor='val_accuracy', save_best_only=True, mode='max', verbose=1)
         es = EarlyStopping(monitor='val_accuracy', patience=5, mode='max', verbose=1)
         metrics = Metrics((val_inputs, val_labels))
         callbacks = [checkpoint, metrics, es]

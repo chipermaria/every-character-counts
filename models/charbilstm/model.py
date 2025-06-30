@@ -67,7 +67,7 @@ class CharBiLSTM(object):
         :param epochs: Number of training epochs.
         :param bs: Batch size.
         """
-        checkpoint = ModelCheckpoint("checkpoints/charbilstm-best.hdf5", monitor='val_accuracy', save_best_only=True, mode='max', verbose=1)
+        checkpoint = ModelCheckpoint("checkpoints/charbilstm-weights-improvement-{epoch:02d}-acc-{val_accuracy:.2f}-loss-{val_loss:.2f}.hdf5", monitor='val_accuracy', save_best_only=True, mode='max', verbose=1)
         es = EarlyStopping(monitor='val_accuracy', patience=5, mode='max', verbose=1)
         metrics = Metrics((val_inputs, val_labels))
         callbacks = [checkpoint, metrics, es]
