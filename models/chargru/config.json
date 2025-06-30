@@ -1,0 +1,21 @@
+{
+  "data": {
+    "alphabet": "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXY0123456789-,;.!?:'\"/\\|_@#$%^&*~`+-=<>()[]{}",
+    "alphabet_size": 95,
+    "input_size": 1500
+  },
+  "model": "chargru",
+  "training": {
+    "epochs": 30,
+    "batch_size": 64,
+    "evaluate_every": 100,
+    "checkpoint_every": 100
+  },
+  "chargru": {
+    "embedding_size": 128,
+    "gru_units": 64,
+    "dropout_p": 0.3,
+    "optimizer": "adam",
+    "loss": "categorical_crossentropy"
+  }
+}
