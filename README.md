@@ -24,7 +24,7 @@ python standard_training.py
 
 python adversarial_training.py  
 
-python adversarial_testing_and_training.py.
+python adversarial_testing_and_training.py
 ```
 
 2. After training, a .h5 model file will be saved in the same folder. Run the explainability script to generate Grad-CAM visualizations:
