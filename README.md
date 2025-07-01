@@ -41,9 +41,9 @@ Replace explain_char*.py with:
 3. To compare CharGRU (adversarial training) with LLama 3.2 run:
 
 ```bash
-python adversarial_chargru_subset_eval.py"
+python adversarial_chargru_subset_eval.py
 ```
 
 ```bash
-python llama3.2_subset_eval.py"
+python llama3.2_subset_eval.py
 ```
