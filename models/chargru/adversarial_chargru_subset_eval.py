@@ -32,7 +32,7 @@ if __name__ == "__main__":
     X, y_onehot = data.convert_data()
     y_true = np.argmax(y_onehot, axis=1)
 
-    model = load_model("model.h5")
+    model = load_model("adv_train_test_model.h5")
 
     y_probs = model.predict(X, batch_size=128, verbose=1)
     y_pred = np.argmax(y_probs, axis=1)
