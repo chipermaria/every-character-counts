@@ -33,7 +33,8 @@ python adversarial_testing_and_training.py
 python explain_char*.py --model_path your_model_file.h5
 ```
 
-Replace explain_char*.py with:
+Replace explain_char*.py with:  
+
     - explain_charcnn.py  
 
     - explain_chargru.py  
