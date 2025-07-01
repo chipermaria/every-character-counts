@@ -20,9 +20,9 @@ Paper reproduction:
 1. Go to 'charbilstm', 'chargru', 'charcnn' folder and run the following scripts:  
 
 ```bash
-python standard_training.py` 
+python standard_training.py
 
-python adversarial_training.py`  
+python adversarial_training.py  
 
 python adversarial_testing_and_training.py.
 ```
