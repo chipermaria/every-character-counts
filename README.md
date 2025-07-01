@@ -34,11 +34,13 @@ python explain_char*.py --model_path your_model_file.h5
 ```
 
 Replace explain_char*.py with:
-    - explain_charcnn.py
-    - explain_chargru.py
+    - explain_charcnn.py  
+
+    - explain_chargru.py  
+
     - explain_charbilstm.py
 
-3. To compare CharGRU (adversarial training) with LLama 3.2 run:
+3. To compare CharGRU (adversarial training) with LLama 3.2 run: 
 
 ```bash
 python adversarial_chargru_subset_eval.py
